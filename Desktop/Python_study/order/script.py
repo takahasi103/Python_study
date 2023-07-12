@@ -24,3 +24,17 @@ index = 0
 for drink in drinks:
     print(str(index) + '. ' + drink.info())
     index += 1
+
+print('--------------------')
+
+food_order = int(input('食べ物の番号を選択してください: '))
+selected_food = foods[food_order]
+
+drink_order = int(input('飲み物の番号を選択してください: '))
+selected_drink = drinks[drink_order]
+
+count = int(input('何セット買いますか？(3つ以上で1割引): '))
+
+result = selected_food.get_total_price(count) + selected_drink.get_total_price(count)
+
+print('合計は' + str(result) + '円です')
