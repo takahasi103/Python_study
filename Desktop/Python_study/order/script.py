@@ -14,12 +14,7 @@ drink3 = Drink('エスプレッソ', 300, 30)
 drinks = [drink1, drink2, drink3]
 
 Food.print_menu(foods)
-
-print('飲み物メニュー')
-index = 0
-for drink in drinks:
-    print(str(index) + '. ' + drink.info())
-    index += 1
+Drink.print_menu(drinks)
 
 print('--------------------')
 
@@ -39,5 +34,4 @@ print('--------------------')
 
 food4 = Food('ナポリタン', 500, 500)
 foods.append(food4)
-
 Food.print_menu(foods)
