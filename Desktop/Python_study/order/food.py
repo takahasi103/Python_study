@@ -10,3 +10,10 @@ class Food(MenuItem):
     
     def calorie_info(self):
         print(str(self.calorie) + 'kcalです')
+
+    def print_menu(foods):
+        print('食べ物メニュー')
+        index = 0
+        for food in foods:
+            print(str(index) + '.' + food.info())
+            index += 1

@@ -13,11 +13,7 @@ drink3 = Drink('エスプレッソ', 300, 30)
 
 drinks = [drink1, drink2, drink3]
 
-print('食べ物メニュー')
-index = 0
-for food in foods:
-    print(str(index) + '. ' + food.info())
-    index += 1
+Food.print_menu(foods)
 
 print('飲み物メニュー')
 index = 0
@@ -38,3 +34,10 @@ count = int(input('何セット買いますか？(3つ以上で1割引): '))
 result = selected_food.get_total_price(count) + selected_drink.get_total_price(count)
 
 print('合計は' + str(result) + '円です')
+
+print('--------------------')
+
+food4 = Food('ナポリタン', 500, 500)
+foods.append(food4)
+
+Food.print_menu(foods)
