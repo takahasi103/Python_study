@@ -18,20 +18,20 @@ Drink.print_menu(drinks)
 
 print('--------------------')
 
-food_order = int(input('食べ物の番号を選択してください: '))
-selected_food = foods[food_order]
+# food_order = int(input('食べ物の番号を選択してください: '))
+# selected_food = foods[food_order]
 
-drink_order = int(input('飲み物の番号を選択してください: '))
-selected_drink = drinks[drink_order]
+# drink_order = int(input('飲み物の番号を選択してください: '))
+# selected_drink = drinks[drink_order]
 
-count = int(input('何セット買いますか？(3つ以上で1割引): '))
+# count = int(input('何セット買いますか？(3つ以上で1割引): '))
 
-result = selected_food.get_total_price(count) + selected_drink.get_total_price(count)
+# result = selected_food.get_total_price(count) + selected_drink.get_total_price(count)
 
-print('合計は' + str(result) + '円です')
+# print('合計は' + str(result) + '円です')
 
 print('--------------------')
 
-food4 = Food('ナポリタン', 500, 500)
+food4 = Food.set_food()
 foods.append(food4)
 Food.print_menu(foods)

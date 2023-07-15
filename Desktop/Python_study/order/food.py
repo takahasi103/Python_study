@@ -18,3 +18,10 @@ class Food(MenuItem):
             print(str(index) + '.' + food.info())
             index += 1
         print('=================')
+
+    def set_food():
+        name = str(input('名前：'))
+        price = int(input('値段：'))
+        calorie = int(input('カロリー：'))
+        return Food(name, price, calorie)
+    
