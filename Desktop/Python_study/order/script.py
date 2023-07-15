@@ -32,6 +32,10 @@ print('--------------------')
 
 print('--------------------')
 
-food4 = Food.set_food()
-foods.append(food4)
-Food.print_menu(foods)
+# food4 = Food.set_food()
+# foods.append(food4)
+# Food.print_menu(foods)
+
+drink4 = Drink.set_drink()
+drinks.append(drink4)
+Drink.print_menu(drinks)

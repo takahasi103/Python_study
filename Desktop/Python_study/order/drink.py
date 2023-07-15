@@ -15,3 +15,9 @@ class Drink(MenuItem):
             print(str(index) + '. ' + drink.info())
             index += 1
         print('=================')
+
+    def set_drink():
+        name = str(input('名前：'))
+        price = int(input('値段：'))
+        amount = int(input('量：'))
+        return Drink(name, price, amount)

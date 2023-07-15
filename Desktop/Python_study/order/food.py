@@ -25,3 +25,4 @@ class Food(MenuItem):
         calorie = int(input('カロリー：'))
         return Food(name, price, calorie)
     
+    
