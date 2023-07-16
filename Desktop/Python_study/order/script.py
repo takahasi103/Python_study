@@ -36,6 +36,8 @@ print('--------------------')
 # foods.append(food4)
 # Food.print_menu(foods)
 
-drink4 = Drink.set_drink()
-drinks.append(drink4)
-Drink.print_menu(drinks)
+# drink4 = Drink.set_drink()
+# drinks.append(drink4)
+# Drink.print_menu(drinks)
+
+Food.delete_menu_item(foods)
