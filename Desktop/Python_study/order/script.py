@@ -40,4 +40,6 @@ print('--------------------')
 # drinks.append(drink4)
 # Drink.print_menu(drinks)
 
-Food.delete_menu_item(foods)
+# Food.delete_menu_item(foods)
+
+Drink.delete_menu(drinks)

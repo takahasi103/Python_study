@@ -21,3 +21,9 @@ class Drink(MenuItem):
         price = int(input('値段：'))
         amount = int(input('量：'))
         return Drink(name, price, amount)
+    
+    def delete_menu(drinks):
+        Drink.print_menu(drinks)
+        i = int(input('削除するメニュー番号を選択して下さい：'))
+        del drinks[i]
+        Drink.print_menu(drinks)
