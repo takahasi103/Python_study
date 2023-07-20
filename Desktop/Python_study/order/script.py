@@ -1,11 +1,11 @@
 from food import Food
 from drink import Drink
 
-food1 = Food('サンドイッチ', 500, 330)
-food2 = Food('チョコケーキ', 400, 450)
-food3 = Food('シュークリーム', 200, 180)
+# food1 = Food('サンドイッチ', 500, 330)
+# food2 = Food('チョコケーキ', 400, 450)
+# food3 = Food('シュークリーム', 200, 180)
 
-foods = [food1, food2, food3]
+# foods = [food1, food2, food3]
 
 drink1 = Drink('コーヒー', 300, 180)
 drink2 = Drink('オレンジジュース', 200, 350)
@@ -13,7 +13,7 @@ drink3 = Drink('エスプレッソ', 300, 30)
 
 drinks = [drink1, drink2, drink3]
 
-Food.print_menu(foods)
+# Food.print_menu(foods)
 Drink.print_menu(drinks)
 
 print('--------------------')
@@ -42,4 +42,7 @@ print('--------------------')
 
 # Food.delete_menu_item(foods)
 
-Drink.delete_menu(drinks)
+# Drink.delete_menu(drinks)
+
+foods = Food.set_menu()
+Food.print_menu(foods)

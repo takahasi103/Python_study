@@ -13,10 +13,8 @@ class Food(MenuItem):
 
     def print_menu(foods):
         print('==食べ物メニュー==')
-        index = 0
-        for food in foods:
+        for index, food in foods.items():
             print(str(index) + '.' + food.info())
-            index += 1
         print('=================')
 
     def set_food():
@@ -30,5 +28,17 @@ class Food(MenuItem):
         i = int(input('削除するメニュー番号を選択して下さい：'))
         del foods[1]
         Food.print_menu(foods)
-    
-    
+
+    def set_menu():
+        n = int(input('foodメニューを何個登録しますか？:'))
+        i = 1
+        foods = {}
+        while i <= n:
+            print(str(i) + '品目のメニュー')
+            name = str(input('名前:'))
+            price = int(input('値段：'))
+            calorie = int(input('カロリー：'))
+            print('---------------------')
+            foods['food' + str(i)] = Food(name, price, calorie)
+            i += 1
+        return foods
