@@ -11,7 +11,7 @@ class Drink(MenuItem):
     def print_menu(drinks):
         print('==飲み物メニュー==')
         index = 0
-        for drink in drinks:
+        for index, drink in enumerate(drinks.values()):
             print(str(index) + '. ' + drink.info())
             index += 1
         print('=================')
@@ -27,3 +27,17 @@ class Drink(MenuItem):
         i = int(input('削除するメニュー番号を選択して下さい：'))
         del drinks[i]
         Drink.print_menu(drinks)
+
+    def set_menu():
+        n = int(input('drinkメニューを何個登録しますか？:'))
+        i = 1
+        drinks = {}
+        while i <= n:
+            print(str(i) + '品目のメニュー')
+            name = str(input('名前:'))
+            price = int(input('値段：'))
+            amount = int(input('量：'))
+            print('---------------------')
+            drinks['drink' + str(i)] = Drink(name, price, amount)
+            i += 1
+        return drinks

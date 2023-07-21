@@ -13,7 +13,7 @@ class Food(MenuItem):
 
     def print_menu(foods):
         print('==食べ物メニュー==')
-        for index, food in foods.items():
+        for index, food in enumerate(foods.values()):
             print(str(index) + '.' + food.info())
         print('=================')
 

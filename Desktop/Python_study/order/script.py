@@ -7,14 +7,14 @@ from drink import Drink
 
 # foods = [food1, food2, food3]
 
-drink1 = Drink('コーヒー', 300, 180)
-drink2 = Drink('オレンジジュース', 200, 350)
-drink3 = Drink('エスプレッソ', 300, 30)
+# drink1 = Drink('コーヒー', 300, 180)
+# drink2 = Drink('オレンジジュース', 200, 350)
+# drink3 = Drink('エスプレッソ', 300, 30)
 
-drinks = [drink1, drink2, drink3]
+# drinks = [drink1, drink2, drink3]
 
 # Food.print_menu(foods)
-Drink.print_menu(drinks)
+# Drink.print_menu(drinks)
 
 print('--------------------')
 
@@ -44,5 +44,8 @@ print('--------------------')
 
 # Drink.delete_menu(drinks)
 
-foods = Food.set_menu()
-Food.print_menu(foods)
+# foods = Food.set_menu()
+# Food.print_menu(foods)
+
+drinks = Drink.set_menu()
+Drink.print_menu(drinks)
