@@ -17,11 +17,13 @@ class Food(MenuItem):
             print(str(index) + '.' + food.info())
         print('=================')
 
-    def set_food():
+    def set_food(foods):
         name = str(input('名前：'))
         price = int(input('値段：'))
         calorie = int(input('カロリー：'))
-        return Food(name, price, calorie)
+        n = len(foods)
+        foods['food' + str(n + 1)] = Food(name, price, calorie)
+        return foods
     
     def delete_menu_item(foods):
         Food.print_menu(foods)

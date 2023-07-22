@@ -44,8 +44,10 @@ print('--------------------')
 
 # Drink.delete_menu(drinks)
 
-# foods = Food.set_menu()
-# Food.print_menu(foods)
+foods = Food.set_menu()
+Food.print_menu(foods)
+Food.set_food(foods)
+Food.print_menu(foods)
 
-drinks = Drink.set_menu()
-Drink.print_menu(drinks)
+# drinks = Drink.set_menu()
+# Drink.print_menu(drinks)
