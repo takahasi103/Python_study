@@ -46,8 +46,9 @@ print('--------------------')
 
 foods = Food.set_menu()
 Food.print_menu(foods)
-Food.set_food(foods)
-Food.print_menu(foods)
+# Food.set_food(foods)
+# Food.print_menu(foods)
+Food.delete_menu_item(foods)
 
 # drinks = Drink.set_menu()
 # Drink.print_menu(drinks)

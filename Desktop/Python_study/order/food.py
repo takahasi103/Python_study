@@ -28,7 +28,7 @@ class Food(MenuItem):
     def delete_menu_item(foods):
         Food.print_menu(foods)
         i = int(input('削除するメニュー番号を選択して下さい：'))
-        del foods[1]
+        del foods['food' + str(i + 1)]
         Food.print_menu(foods)
 
     def set_menu():
