@@ -16,11 +16,13 @@ class Drink(MenuItem):
             index += 1
         print('=================')
 
-    def set_drink():
+    def set_drink(drinks):
         name = str(input('名前：'))
         price = int(input('値段：'))
         amount = int(input('量：'))
-        return Drink(name, price, amount)
+        n = len(drinks)
+        drinks['drink' + str(n + 1)] = Drink(name, price, amount)
+        return drinks
     
     def delete_menu(drinks):
         Drink.print_menu(drinks)
