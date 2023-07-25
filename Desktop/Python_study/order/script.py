@@ -52,5 +52,6 @@ print('--------------------')
 
 drinks = Drink.set_menu()
 Drink.print_menu(drinks)
-Drink.set_drink(drinks)
+# Drink.set_drink(drinks)
+Drink.delete_drink_item(drinks)
 Drink.print_menu(drinks)

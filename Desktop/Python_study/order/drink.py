@@ -24,11 +24,10 @@ class Drink(MenuItem):
         drinks['drink' + str(n + 1)] = Drink(name, price, amount)
         return drinks
     
-    def delete_menu(drinks):
+    def delete_drink_item(drinks):
         Drink.print_menu(drinks)
         i = int(input('削除するメニュー番号を選択して下さい：'))
-        del drinks[i]
-        Drink.print_menu(drinks)
+        del drinks['drink' + str(i + 1)]
 
     def set_menu():
         n = int(input('drinkメニューを何個登録しますか？:'))
