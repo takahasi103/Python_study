@@ -25,11 +25,10 @@ class Food(MenuItem):
         foods['food' + str(n + 1)] = Food(name, price, calorie)
         return foods
     
-    def delete_menu_item(foods):
+    def delete_menu_food(foods):
         Food.print_menu(foods)
         i = int(input('削除するメニュー番号を選択して下さい：'))
         del foods['food' + str(i + 1)]
-        Food.print_menu(foods)
 
     def set_menu():
         n = int(input('foodメニューを何個登録しますか？:'))
